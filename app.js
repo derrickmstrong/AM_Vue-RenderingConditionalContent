@@ -2,7 +2,11 @@ const app = Vue.createApp({
   data() {
     return { 
       addGoalValue: '',
-      goals: [] 
+      goals: [],
+      goalsObj: {
+        goal: 'Complete Vue course',
+        priority: 'High',
+      } 
     };
   },
 

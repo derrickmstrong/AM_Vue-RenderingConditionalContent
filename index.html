@@ -30,8 +30,19 @@
       <!-- v-else has to immediately follow v-if and shows if v-if condition is false. Note, there is also v-else-if -->
       <ul v-else>
         <!-- Output your list of goals data with v-for -->
-        <li v-for="goal in goals">{{goal}}</li>
+        <li v-for="(goal, index) in goals">{{ index + 1 }} - {{ goal }}</li>
       </ul>
+
+      <!-- Looping through an objects grabbing the key, value pair, as well as, the index if needed -->
+      <!-- <ul>
+        <li v-for="(value, key, index) in goalsObj">{{ key }}: {{ value }}</li>
+      </ul> -->
+
+      <!-- Looping through a range of numbers -->
+      <ul>
+        <li v-for="num in 10">{{ num }}</li>
+      </ul>
+
     </section>
   </body>
 </html>
